@@ -1,0 +1,42 @@
+body {
+    background: #e2e8f0;
+}
+
+/* FILTER BOX */
+.filter-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* TABLE */
+table {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #cbd5f5;
+}
+
+tr:nth-child(even) {
+    background: #f1f5f9;
+}
+
+/* PROFIT */
+.profit {
+    color: green;
+    font-weight: bold;
+}
+
+/* LOSS */
+.loss {
+    color: red;
+    font-weight: bold;
+}

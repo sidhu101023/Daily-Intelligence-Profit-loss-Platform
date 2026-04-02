@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/profile.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="logo">Sahayak</div>
+
+    <ul class="nav-links">
+        <li><a href="adddata.html">Add Data</a></li>
+        <li><a href="records.html">Records</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="prediction.html">Prediction</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+</nav>
+
+<div class="profile-wrapper">
+
+  <div class="profile-layout">
+
+    <!-- LEFT SIDE : PROFILE FORM -->
+
+    <div class="profile-card">
+
+      <h2>Profile Setup</h2>
+
+      <form id="profileForm">
+
+        <label>Full Name</label>
+        <input type="text" id="name" required>
+
+        <label>Mobile Number</label>
+
+        <div class="mobile-box">
+          <span class="country-code">+91</span>
+
+          <input
+            type="tel"
+            id="mobile"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            placeholder="Enter 10 digit number"
+            required
+          >
+        </div>
+
+        <label>No. of Businesses you want to add</label>
+
+        <input
+          type="number"
+          id="businessCount"
+          min="1"
+          placeholder="Enter number of businesses"
+          required
+        >
+
+        <div id="businessInputs"></div>
+
+        <button type="submit">Submit</button>
+
+      </form>
+
+    </div>
+
+
+    <!-- RIGHT SIDE : BUSINESS LIST -->
+
+    <div class="business-list-card">
+
+      <h3>Your Businesses</h3>
+
+      <div id="businessList">
+        <!-- Businesses will appear here dynamically -->
+      </div>
+
+      <button id="logoutBtn" class="logout-btn">Logout</button>
+    </div>
+  </div>
+
+</div>
+<script src="JS/profile.js"></script>
+</body>
+</html>

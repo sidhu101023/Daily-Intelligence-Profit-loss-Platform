@@ -1,0 +1,172 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:linear-gradient(#eeeeee,#dddddd);
+min-height:100vh;
+}
+
+/* LOGIN NAVBAR */
+
+.login-navbar{
+height:80px;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f8faff;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+margin:20px;
+border-radius:12px;
+}
+
+.center-title{
+font-size:28px;
+font-weight:bold;
+color:#2c3e50;
+display:flex;
+gap:8px;
+align-items:center;
+}
+
+/* CENTER LOGIN */
+
+.login-container{
+display:flex;
+justify-content:center;
+align-items:center;
+height:80vh;
+}
+
+/* LOGIN CARD */
+
+.login-card{
+width:360px;
+background:white;
+border-radius:12px;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+overflow:hidden;
+}
+
+/* HEADER */
+
+.login-header{
+background:#1b5c63;
+color:white;
+padding:25px;
+text-align:center;
+}
+
+/* BODY */
+
+.login-body{
+padding:25px;
+}
+
+label{
+font-size:14px;
+margin-bottom:5px;
+display:block;
+}
+
+input{
+width:100%;
+padding:10px;
+border:1px solid #ccc;
+border-radius:6px;
+margin-bottom:15px;
+}
+
+.forgot{
+text-align:right;
+margin-bottom:15px;
+}
+
+.forgot a{
+font-size:13px;
+color:#1b5c63;
+text-decoration:none;
+}
+
+/* BUTTON */
+
+.login-btn{
+width:100%;
+padding:12px;
+border:none;
+border-radius:6px;
+background:linear-gradient(#f2994a,#d9781d);
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+
+.login-btn:hover{
+opacity:0.9;
+}
+
+/* DIVIDER */
+
+.divider{
+display:flex;
+align-items:center;
+margin:20px 0;
+font-size:13px;
+color:#777;
+}
+
+.divider::before,
+.divider::after{
+content:'';
+flex:1;
+border-bottom:1px solid #ccc;
+}
+
+.divider span{
+padding:0 10px;
+}
+
+/* SOCIAL LOGIN */
+
+.social-login{
+display:flex;
+justify-content:center;
+gap:15px;
+margin-bottom:15px;
+}
+
+.social-login span{
+width:35px;
+height:35px;
+border-radius:6px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+cursor:pointer;
+}
+
+.google{
+background:#f1f1f1;
+}
+
+.linkedin{
+background:#0077b5;
+color:white;
+}
+
+/* SIGNUP */
+
+.signup{
+text-align:center;
+font-size:14px;
+}
+
+.signup a{
+color:#1b5c63;
+font-weight:600;
+text-decoration:none;
+}

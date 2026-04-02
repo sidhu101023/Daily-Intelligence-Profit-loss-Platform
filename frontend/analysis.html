@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Analysis</title>
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/analysis.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Sahayak</div>
+
+    <ul class="nav-links">
+        <li><a href="adddata.html">Add Data</a></li>
+        <li><a href="records.html">Records</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="prediction.html">Prediction</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+</nav>
+<div class="business-navbar">
+    <h4>Select Business:</h4>
+    <div id="businessTabs"></div>
+</div>
+<div class="analysis-container">
+
+    <h1>BUSINESS ANALYSIS AI</h1>
+
+    <!-- CHAT BOX -->
+    <div class="chat-box" id="chatBox">
+        <div class="bot-msg">Hello! Ask me anything about your business 📊</div>
+    </div>
+
+    <!-- INPUT -->
+    <div class="chat-input">
+        <input type="text" id="userInput" placeholder="Ask about profit, expenses, trends...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+
+</div>
+<script src="JS/business.js"></script>
+<script src="JS/analysis.js"></script>
+</body>
+</html>

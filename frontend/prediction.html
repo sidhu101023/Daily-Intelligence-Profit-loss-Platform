@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prediction</title>
+<link rel="stylesheet" href="CSS/style.css">
+<link rel="stylesheet" href="CSS/prediction.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">Sahayak</div>
+
+    <ul class="nav-links">
+        <li><a href="adddata.html">Add Data</a></li>
+        <li><a href="records.html">Records</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="prediction.html">Prediction</a></li>
+        <li><a href="analysis.html">Analysis</a></li>
+        <li><a href="profile.html">Profile</a></li>
+    </ul>
+</nav>
+<div class="business-navbar">
+    <h4>Select Business:</h4>
+    <div id="businessTabs"></div>
+</div>
+<div class="prediction">
+
+    <h1>MONTHLY FINANCIAL PREDICTIONS</h1>
+
+    <!-- CARDS -->
+    <div class="cards">
+
+        <div class="card">
+            <span class="badge">Projected</span>
+            <h3>PROJECTED MONTHLY INCOME</h3>
+            <h1 id="pIncome">$0</h1>
+        </div>
+
+        <div class="card">
+            <span class="badge">Projected</span>
+            <h3>PROJECTED MONTHLY EXPENSES</h3>
+            <h1 id="pExpense">$0</h1>
+        </div>
+
+        <div class="card">
+            <span class="badge">Projected</span>
+            <h3>PROJECTED MONTHLY PROFIT</h3>
+            <h1 id="pProfit">$0</h1>
+        </div>
+
+    </div>
+
+    <!-- CHARTS -->
+    <div class="charts">
+
+        <div class="chart-box">
+            <h3>Predicted Income & Expenses</h3>
+            <canvas id="comboChart"></canvas>
+        </div>
+
+        <div class="chart-box">
+            <h3>Predicted Profit</h3>
+            <canvas id="profitChart"></canvas>
+        </div>
+
+        <!-- MODEL PANEL -->
+        <div class="model-box">
+            <h3>PREDICTION MODEL</h3>
+
+            <label>Scenario</label>
+            <select id="scenario">
+                <option value="1.2">Optimistic</option>
+                <option value="1">Normal</option>
+                <option value="0.8">Pessimistic</option>
+            </select>
+
+            <label>Growth Rate: <span id="growthValue">0%</span></label>
+            <input type="range" id="growth" min="0" max="100" value="10">
+        </div>
+
+    </div>
+
+</div>
+<script src="JS/business.js"></script>
+<script src="JS/prediction.js"></script>
+</body>
+</html>

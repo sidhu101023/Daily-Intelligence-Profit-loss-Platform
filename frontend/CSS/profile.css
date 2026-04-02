@@ -1,0 +1,201 @@
+/* PROFILE PAGE WRAPPER */
+
+.profile-wrapper{
+display:flex;
+justify-content:center;
+align-items:flex-start;
+padding:40px;
+margin-top:20px;
+}
+
+/* LEFT + RIGHT LAYOUT */
+
+.profile-layout{
+display:flex;
+gap:40px;
+align-items:flex-start;
+}
+
+/* PROFILE CARD (LEFT SIDE) */
+
+.profile-card{
+
+width:420px;
+background:white;
+padding:35px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+.profile-card h2{
+text-align:center;
+margin-bottom:25px;
+}
+
+/* FORM LABELS */
+
+.profile-card label{
+font-weight:600;
+margin-top:12px;
+display:block;
+}
+
+/* INPUT FIELDS */
+
+.profile-card input{
+
+width:100%;
+padding:10px;
+margin-top:6px;
+border:1px solid #d1d5db;
+border-radius:6px;
+font-size:14px;
+
+}
+
+.profile-card input:focus{
+outline:none;
+border-color:#4f46e5;
+}
+
+/* MOBILE INPUT STYLE */
+
+.mobile-box{
+
+display:flex;
+align-items:center;
+border:1px solid #d1d5db;
+border-radius:6px;
+margin-top:6px;
+overflow:hidden;
+
+}
+
+.country-code{
+
+padding:10px;
+background:#f1f5f9;
+border-right:1px solid #d1d5db;
+font-weight:600;
+
+}
+
+.mobile-box input{
+
+border:none;
+flex:1;
+padding:10px;
+
+}
+
+.mobile-box input:focus{
+outline:none;
+}
+
+/* BUSINESS INPUTS */
+
+#businessInputs input{
+margin-top:10px;
+}
+
+/* SUBMIT BUTTON */
+
+.profile-card button{
+
+width:100%;
+padding:12px;
+margin-top:20px;
+background:#4f46e5;
+color:white;
+border:none;
+border-radius:6px;
+font-size:16px;
+cursor:pointer;
+
+}
+
+.profile-card button:hover{
+background:#4338ca;
+}
+
+/* RIGHT SIDE BUSINESS LIST */
+
+.business-list-card{
+
+width:320px;
+background:white;
+padding:25px;
+border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,0.08);
+
+}
+
+.business-list-card h3{
+
+text-align:center;
+margin-bottom:20px;
+
+}
+
+/* BUSINESS ROW */
+
+.business-row{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px;
+border-bottom:1px solid #e5e7eb;
+
+}
+
+/* BUSINESS NAME */
+
+.business-row span{
+font-weight:500;
+}
+
+/* DELETE BUTTON */
+
+.delete-btn{
+
+background:#ef4444;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:6px;
+cursor:pointer;
+font-size:12px;
+
+}
+
+.delete-btn:hover{
+background:#dc2626;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:900px){
+
+.profile-layout{
+flex-direction:column;
+align-items:center;
+}
+
+.business-list-card{
+width:420px;
+}
+
+}
+
+.logout-btn{
+    margin-top: 20px;
+    padding: 10px;
+    width: 100%;
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
