@@ -1,5 +1,7 @@
 /* PROFILE PAGE WRAPPER */
-
+body {
+    background: #8fd5f5;
+}
 .profile-wrapper{
 display:flex;
 justify-content:center;
@@ -161,6 +163,7 @@ font-weight:500;
 .delete-btn{
 
 background:#ef4444;
+width: 100px;
 color:white;
 border:none;
 padding:6px 12px;
